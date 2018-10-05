@@ -6,7 +6,7 @@ var urlPath;
 //var urlPath = 'https://assetmanager.expenzing.com/TnEV1_0AWeb/WebService/Login/';
 //var WebServicePath = 'http://1.255.255.169:8085/NexstepWebService/mobileLinkResolver.service';
 //var WebServicePath ='http://1.255.255.152:8080/NexstepWebService/mobileLinkResolver.service';
-var WebServicePath ='http://1.255.255.140:8081/NexstepWebService/mobileLinkResolver.service';
+var WebServicePath ='http://1.255.255.171:8084/NexstepWebService/mobileLinkResolver.service';
 // var WebServicePath ='https://bagictravel.bajajallianz.com/NexstepWebService/mobileLinkResolver.service';
 var clickedFlagCar = false;
 var clickedFlagTicket = false;
