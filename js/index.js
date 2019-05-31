@@ -5,7 +5,7 @@ var urlPath;
 //var urlPath =  'http://1.255.255.152:8333/TnEV1_0AWeb/WebService/Login/';
 //var urlPath = 'https://assetmanager.expenzing.com/TnEV1_0AWeb/WebService/Login/';
 //var WebServicePath = 'http://1.255.255.169:8085/NexstepWebService/mobileLinkResolver.service';
-//var WebServicePath ='http://1.255.255.152:8080/NexstepWebService/mobileLinkResolver.service';
+//var WebServicePath ='http://1.255.255.95:8080/NexstepWebService/mobileLinkResolver.service';
 var WebServicePath ='http://live.nexstepapps.com:8284/NexstepWebService/mobileLinkResolver.service';
 // var WebServicePath ='https://bagictravel.bajajallianz.com/NexstepWebService/mobileLinkResolver.service';
 var clickedFlagCar = false;
@@ -92,7 +92,7 @@ function login(){
 	var pageRef=defaultPagePath+'category.html';
 	//urlPath=window.localStorage.getItem("urlPath");
 	//alert(555);
-	//alert(urlPath);
+	alert(urlPath);
 	setUrlPathLocalStorage(urlPath);
 	//alert(50000);
 	j('#loading').show();
