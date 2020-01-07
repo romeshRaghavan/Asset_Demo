@@ -2,6 +2,7 @@ var j = jQuery.noConflict();
 var defaultPagePath='app/pages/';
 var headerMsg = "Expenzing";
 var urlPath;
+var urlPath1="https://vsm12intbudg.expenzing.com/portal/WebService/Login/";
 //var urlPath =  'http://1.255.255.152:8333/TnEV1_0AWeb/WebService/Login/';
 //var urlPath = 'https://assetmanager.expenzing.com/TnEV1_0AWeb/WebService/Login/';
 //var WebServicePath = 'http://1.255.255.169:8085/NexstepWebService/mobileLinkResolver.service';
@@ -92,12 +93,12 @@ function login(){
 	var pageRef=defaultPagePath+'category.html';
 	//urlPath=window.localStorage.getItem("urlPath");
 	//alert(555);
-	alert(urlPath);
+	//alert(urlPath);
 	setUrlPathLocalStorage(urlPath);
 	//alert(50000);
 	j('#loading').show();
     j.ajax({
-         url: urlPath+"LoginWebService",
+         url: urlPath1+"LoginWebService",
          type: 'POST',
          dataType: 'json',
          crossDomain: true,
@@ -154,7 +155,7 @@ function login(){
 		jsonToBeSend["initiationId"] = "";
 		j('#loading').show();
 		 j.ajax({
-         url: urlPath+"BarcodeWebservice",
+         url: urlPath1+"BarcodeWebservice",
          type: 'POST',
          dataType: 'json',
          crossDomain: true,
@@ -434,7 +435,7 @@ function updatePhysicalVerification(uniqueCode,initiationId,physicalVerification
 		jsonToBeSend["rejectionComment"] = document.getElementById('rejectionComments').value;
 		j('#loading').show();
 		 j.ajax({
-			 url: urlPath+"BarcodeWebservice",
+			 url: urlPath1+"BarcodeWebservice",
 			 type: 'POST',
 			 dataType: 'json',
 			 crossDomain: true,
@@ -490,7 +491,7 @@ function validateValidMobileUser(){
 			jsonToBeSend["pass"]=window.localStorage.getItem("Password");
 			var urlPath = window.localStorage.getItem("urlPath");
 			j.ajax({
-			 url: urlPath+"ValidateUserWebservice",
+			 url: urlPath1+"ValidateUserWebservice",
 		         type: 'POST',
 		         dataType: 'json',
 		         crossDomain: true,
