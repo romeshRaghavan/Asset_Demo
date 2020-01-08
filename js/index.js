@@ -92,7 +92,7 @@ function login(){
 	var pageRef=defaultPagePath+'category.html';
 	//urlPath=window.localStorage.getItem("urlPath");
 	//alert(555);
-	alert(urlPath);
+	//alert(urlPath);
 	setUrlPathLocalStorage(urlPath);
 	//alert(50000);
 	j('#loading').show();
