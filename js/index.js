@@ -2,7 +2,6 @@ var j = jQuery.noConflict();
 var defaultPagePath='app/pages/';
 var headerMsg = "Expenzing";
 var urlPath;
-//var urlPath1="https://vsm12intbudg.expenzing.com/portal/WebService/Login/";
 //var urlPath =  'http://1.255.255.152:8333/TnEV1_0AWeb/WebService/Login/';
 //var urlPath = 'https://assetmanager.expenzing.com/TnEV1_0AWeb/WebService/Login/';
 //var WebServicePath = 'http://1.255.255.169:8085/NexstepWebService/mobileLinkResolver.service';
@@ -41,8 +40,8 @@ function commonLogin(){
  	var domainName = userNameValue.split('@')[1];
 	var jsonToDomainNameSend = new Object();
 	jsonToDomainNameSend["userName"] = domainName;
-    	jsonToDomainNameSend["mobilePlatform"] = device.platform;
-	//jsonToDomainNameSend["mobilePlatform"] = "Android";
+    //jsonToDomainNameSend["mobilePlatform"] = device.platform;
+	jsonToDomainNameSend["mobilePlatform"] = "Android";
   	//var res=JSON.stringify(jsonToDomainNameSend);
 	var requestPath = WebServicePath;
 	//alert(requestPath);
@@ -93,7 +92,7 @@ function login(){
 	var pageRef=defaultPagePath+'category.html';
 	//urlPath=window.localStorage.getItem("urlPath");
 	//alert(555);
-	//alert(urlPath);
+	alert(urlPath);
 	setUrlPathLocalStorage(urlPath);
 	//alert(50000);
 	j('#loading').show();
